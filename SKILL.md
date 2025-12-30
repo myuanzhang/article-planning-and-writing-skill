@@ -40,15 +40,18 @@ When generating a technical tutorial using this Skill, follow this workflow stri
 
 ### Phase 2: Section-by-Section Writing
 
-For EACH section in the outline:
+**IMPORTANT:** Continue through ALL sections in the outline automatically. Do NOT stop between sections.
+
+For EACH section in the outline, in order:
 
 1. Load the corresponding `references/<section>.md`.
 2. Read and follow **all writing rules and constraints** in that reference file.
-3. Write **ONLY the current section**.
-4. Do NOT reference future sections.
-5. Do NOT summarize or merge content across sections.
+3. Write the current section content.
+4. Immediately proceed to the next section.
+5. Do NOT reference future sections while writing.
+6. Do NOT summarize or merge content across sections.
 
-> Each section is treated as an **independent writing operation**.
+> Each section is treated as an **independent writing operation**, but all sections must be completed in one continuous session before moving to Phase 3.
 
 ------
 

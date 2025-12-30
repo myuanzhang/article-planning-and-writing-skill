@@ -53,9 +53,32 @@ After covering all components, add a section explaining:
 - How components communicate
 - What information flows between them
 - Where state lives (memory, files, database, etc.)
-- Use diagrams or tables if helpful
+- **Include a visual flow diagram** — Use ASCII art to show the pipeline phases and data flow
 
 Heading: `## Interaction & Data Flow`
+
+**Diagram Guidelines:**
+
+When applicable, include a visual flow diagram using ASCII box-drawing characters. Show the distinct phases (e.g., offline vs online, indexing vs retrieval) and how data flows between components.
+
+Example structure:
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                         PHASE NAME                                  │
+│                        (timing/trigger)                             │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│   Input ──► Step 1 ──► Step 2 ──► Output                           │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+For systems with persistent state, also include a **State Management** table:
+
+| State | Where It Lives | Update Frequency |
+|-------|----------------|------------------|
+| Data X | Database | On change |
+| Data Y | Memory | Per request |
 
 ## Quality Bar
 

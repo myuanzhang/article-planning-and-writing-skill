@@ -57,6 +57,41 @@ integrate this information into flowing prose.
 
 Use `---` between steps for visual separation.
 
+### Complete Code File (REQUIRED)
+
+**CRITICAL:** At the end of the demo section, you MUST provide a **complete, runnable code file** that combines all the code snippets from the previous steps. This file should:
+
+- Be a single, complete file that readers can copy and run directly
+- Include all necessary imports and dependencies
+- Combine all code from individual steps into a working whole
+- Be properly formatted and ready to execute
+- Use consistent indentation and structure
+
+**Format:**
+
+```markdown
+### Complete Code
+
+Here's the complete `main.py` file that combines everything from the steps above:
+
+```python
+# main.py
+# Complete working implementation
+
+import ...
+
+# All code from steps 1-N, combined into one runnable file
+```
+
+**Save this as `main.py` and run with:** `python main.py`
+```
+
+This complete file is essential because:
+- Readers can verify their implementation
+- No ambiguity about how pieces fit together
+- Immediate "it works" feedback
+- Reference for understanding the whole system
+
 ### Complete Example Output (Optional but Recommended)
 
 Show what the final system produces when run:
@@ -115,6 +150,7 @@ For each technology used, verify from official sources:
 - [ ] No deprecated syntax
 - [ ] Code tested and runs without errors
 - [ ] Versions verified from official sources
+- [ ] **Complete runnable code file provided at the end of demo section**
 
 ## Quality Bar
 
