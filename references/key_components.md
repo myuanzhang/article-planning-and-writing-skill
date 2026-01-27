@@ -43,6 +43,12 @@ Write 2-4 paragraphs that naturally integrate:
 - Include just enough code to make the component concrete
 - Focus on **what** and **why**, not just implementation details
 
+**Code accuracy requirements:**
+- All code examples must use current, verifiable syntax
+- Verify API calls against official documentation
+- Use generic/illustrative examples when specific APIs are uncertain
+- Avoid deprecated or version-specific patterns unless clearly labeled
+
 #### Separator
 
 Use `---` between components for visual separation.

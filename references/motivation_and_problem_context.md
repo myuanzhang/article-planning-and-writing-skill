@@ -1,9 +1,24 @@
 # Motivation & Problem Context
 
+## Section Heading
+
+This section should have a **descriptive, topic-specific heading** that reflects the actual content — not the generic "Motivation & Problem Context" template name.
+
+**Good examples:**
+- `## Why Reflection Matters`
+- `## The Problem with Single-Pass Generation`
+- `## Why Traditional LLMs Fall Short`
+- `## The Need for Tool-Using Agents`
+
+**Choose a heading that:**
+- Directly relates to the technology being explained
+- Signals to the reader what problem this section addresses
+- Is concise (3-8 words typically)
+
 ## Output Format
 
-**DO NOT** output a section heading like `## Motivation & Problem Context`. The
-generated section should start directly with natural paragraph content.
+**DO NOT** use a section heading like `## Motivation & Problem Context`. The
+generated section should use a **custom heading** appropriate to the topic.
 
 The section must be written in **natural paragraph format**, divided into 2-4
 paragraphs following the structure below. Use the reference pattern as your

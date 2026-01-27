@@ -1,5 +1,7 @@
 # Article Outline Template
 
+## Structure
+
 ```markdown
 # Title (`references/title.md`)
 One-line Value Proposition (`references/one_line_value_proposition.md`)
@@ -11,46 +13,54 @@ One-line Value Proposition (`references/one_line_value_proposition.md`)
 ## Conclusion (`references/conclusion.md`)
 ```
 
-## Example
+## Phase 1 Outline Format (Skeleton Only)
+
+The outline created in Phase 1 should look like this — **NOT a full article**:
 
 ```
-## RAG in Practice: Build a Production-Ready Retrieval-Augmented Generation System From Scratch
+# RAG in Practice: Build a Production-Ready Retrieval-Augmented Generation System
 
-**Learn what Retrieval-Augmented Generation is, how its components work together, and how to build a production-ready knowledge base assistant from scratch using vector search and LLMs.**
+**Learn what RAG is, how its components work together, and how to build a production-ready knowledge base assistant from scratch.**
 
-## Motivation & Problem Context
+## Why RAG Matters
 
-Large Language Models have transformed how we interact with information...
+Will describe the limitations of pure LLM approaches (hallucination, knowledge cutoff) and how RAG addresses them by grounding responses in retrieved documents.
 
 ## What Is RAG?
 
-**Retrieval-Augmented Generation (RAG)** is an architecture that...
+Will define RAG as an architecture combining retrieval and generation, contrast it with fine-tuning, and list real-world applications.
 
 ## Key Components of RAG Systems
 
-A RAG system consists of five core components...
+Will cover the five core components: document loader, text splitter, embeddings, vector store, and retrieval chain.
 
 ## End-to-End Demo: Building a Technical Documentation Assistant
 
-In this section, I'll walk you through building a complete RAG system...
+Will build a complete RAG system that answers questions about codebase documentation with source citations.
 
-### Step 1: Project Setup & Configuration
-
-### Step 2: Document Loading & Processing
-
-### Step 3: Embeddings & Vector Index Creation
-
-...
+- Step 1: Project Setup & Configuration
+- Step 2: Document Loading & Processing
+- Step 3: Embeddings & Vector Index Creation
+- Step 4: Retrieval Chain Implementation
+- Step 5: Query Interface
 
 ## Results & Outcomes
 
-After completing the demo, you have a working RAG system...
+Will describe the working system, its performance characteristics, and extension possibilities.
 
 ## Conclusion
 
-RAG is a pattern, not a product...
+Will summarize when to use RAG and when simpler approaches suffice.
 ```
 
-**Note**: This example shows the structure and flow. The actual section headings,
-step count, and content should be tailored to the specific technology being
-documented.
+**Notice**: The outline above contains ONLY structure and brief descriptions of what each section will cover. It does NOT contain full paragraphs, complete code examples, or detailed explanations. Those are written in Phase 2.
+
+## Key Rules for Phase 1 Outlines
+
+1. **Section headings only** — No `###` or `####` subheadings within sections
+2. **Brief descriptions** — 2-3 sentences per section explaining what will be covered
+3. **Demo step titles** — List steps but don't write their content
+4. **No code examples** — At most mention what code will demonstrate
+5. **Clear progression** — Ensure Why → What → How → Demo → Reflection flow
+
+**Note**: The actual section headings, step count, and content should be tailored to the specific technology being documented.

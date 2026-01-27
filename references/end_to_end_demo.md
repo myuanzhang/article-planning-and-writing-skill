@@ -118,40 +118,80 @@ Before writing the demo, ensure it satisfies all of the following:
 
 **CRITICAL:** All code examples, API calls, package versions, and configuration syntax MUST be current and functional at the time of writing. Broken code wastes readers' time and damages trust.
 
-Tutorials with broken or outdated code are worse than no tutorial at all — they waste readers' time and damage trust.
+> Tutorials with broken or outdated code are worse than no tutorial at all — they waste readers' time and damage trust.
 
-### Before Writing
+### Mandatory Verification Steps
 
-For each technology used, verify from official sources:
-1. Check official documentation — Confirm the latest stable version and current syntax
+For each technology used in the demo, you **must** verify using web search from official sources:
 
-2. Verify API changes — Many libraries have breaking changes between major versions
+1. **Verify current package names** — Search: `[package] official documentation`
+   - Packages often rename or restructure (e.g., `openai` vs `openai-chat`)
+   - Import paths change between major versions
 
-3. Test the code — Run a minimal example to confirm it works with the specified versions
+2. **Verify current API syntax** — Search: `[package] [function] API reference`
+   - Function signatures change
+   - Parameter names and order may shift
+   - Return types can differ
 
-4. Check deprecation warnings — Avoid using features marked as deprecated
+3. **Verify installation commands** — Search: `[package] installation guide`
+   - Package names in pip/npm may differ from import names
+   - Some packages require system dependencies
+
+4. **Check for deprecations** — Search: `[package] deprecation notice` or `[package] migration guide`
+   - Features marked deprecated should be avoided
+   - Migration guides indicate breaking changes
+
+5. **Verify version requirements** — Search: `[package] latest stable version`
+   - Only pin versions when necessary for compatibility
+   - When pinning, note the verification date
 
 ### Writing Guidelines
 
-- **Omit version pins** unless necessary — let readers install latest stable:
+- **Prefer latest stable** — Let readers install the current stable version:
   ```bash
   pip install package-name  # not package-name==1.2.3
-  ```
-- **Document verification date** when pinning versions:
+```
+
+- **Pin only when necessary** — Pin versions only when:
+  - The tutorial depends on specific behavior
+  - Breaking changes exist between versions
+  - Beta/unstable features are required
+
+- **Document verification** — When pinning versions or using specific APIs:
   ```bash
-  # Verified December 2025 from pypi.org
+  # Verified January 2026 from official docs
+  # Requires langchain >= 0.3.0
+  pip install langchain
   ```
-- **Use ecosystem-appropriate sources**: PyPI (Python), npmjs.com (Node.js), crates.io (Rust), pkg.go.dev (Go), official docs/APIs
+
+- **Use official sources** — Link to authoritative documentation:
+  - Python: PyPI, python.org, official GitHub repo
+  - Node.js: npmjs.com, official docs
+  - Rust: crates.io, docs.rs
+  - Go: pkg.go.dev, official documentation
 
 ### Quality Checklist
 
-- [ ] Imports use current package names
-- [ ] API calls match latest documentation
-- [ ] No deprecated syntax
-- [ ] Code tested and runs without errors
-- [ ] Versions verified from official sources
-- [ ] **Complete runnable code file provided at the end of demo section**
+Before finalizing the demo, confirm:
 
+- [ ] All package names verified from official sources
+- [ ] All import statements match current package structure
+- [ ] All API calls verified against current documentation
+- [ ] No deprecated features or syntax used
+- [ ] Installation commands tested and working
+- [ ] Version-specific claims are accurate
+- [ ] External dependencies are accessible and current
+- [ ] Code tested and runs without errors
+- [ ] **A complete, runnable code file is provided at the end of the demo section**
+
+### Search Strategy Examples
+
+| Need | Search Query | Expected Source |
+|------|--------------|-----------------|
+| Current API | `langchain agents API reference` | python.langchain.com |
+| Package name | `duckduckgo-search langchain install` | pypi.org or GitHub |
+| Breaking changes | `langchain 0.1 to 0.2 migration` | LangChain blog/docs |
+| Deprecations | `openai python deprecation list` | GitHub README or docs |
 ## Quality Bar
 
 A reader should finish this section thinking:
